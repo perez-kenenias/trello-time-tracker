@@ -23,6 +23,12 @@ public class Board {
     private String description;
     private String templateType;
     private List<BoardList> lists = new ArrayList<>();
+
+    // Personalización (features premium de tablero)
+    private String background;          // color o gradiente key (ej. "blue", "gradient-sunset")
+    @Builder.Default
+    private Boolean starred = false;    // tablero favorito
+
     private LocalDateTime createdAt;
     private LocalDateTime updatedAt;
 }

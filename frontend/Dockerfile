@@ -10,15 +10,8 @@ RUN npm run build
 FROM nginx:alpine
 COPY --from=builder /app/build /usr/share/nginx/html
 
-# Add nginx config to handle React Router
-RUN echo 'server { \
-    listen 3000; \
-    location / { \
-        root /usr/share/nginx/html; \
-        index index.html; \
-        try_files $uri $uri/ /index.html; \
-    } \
-}' > /etc/nginx/conf.d/default.conf
+# nginx config: SPA routing + cache headers (no-cache en index.html, immutable en /static)
+COPY nginx.conf /etc/nginx/conf.d/default.conf
 
 EXPOSE 3000
 CMD ["nginx", "-g", "daemon off;"]

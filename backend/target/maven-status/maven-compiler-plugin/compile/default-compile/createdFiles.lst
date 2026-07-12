@@ -9,6 +9,7 @@ com\trellotracker\model\BoardList$BoardListBuilder.class
 com\trellotracker\controller\HomeController.class
 com\trellotracker\repository\BoardRepository.class
 com\trellotracker\dto\BoardRequest.class
+com\trellotracker\model\Card$CheckItem.class
 com\trellotracker\model\Card$CardBuilder.class
 com\trellotracker\model\BoardList.class
 com\trellotracker\repository\TemplateRepository.class
@@ -18,6 +19,7 @@ com\trellotracker\dto\TimeEntryRequest.class
 com\trellotracker\config\LocaleConfig.class
 com\trellotracker\model\Template.class
 com\trellotracker\dto\TimeEntryRequest$TimeEntryRequestBuilder.class
+com\trellotracker\model\Card$Comment.class
 com\trellotracker\model\Template$TemplateBuilder.class
 com\trellotracker\dto\CardRequest$CardRequestBuilder.class
 com\trellotracker\config\OpenApiConfig.class

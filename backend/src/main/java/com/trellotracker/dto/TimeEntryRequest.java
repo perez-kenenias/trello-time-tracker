@@ -15,4 +15,5 @@ public class TimeEntryRequest {
     private String description;
     private LocalDateTime startTime;
     private LocalDateTime endTime;
+    private Long minutes;
 }

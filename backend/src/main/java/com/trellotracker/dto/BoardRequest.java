@@ -16,4 +16,6 @@ public class BoardRequest {
     private String description;
     private String templateType;
     private List<String> listTitles;
+    private String background;    // color/gradiente de fondo del tablero
+    private Boolean starred;      // marcar como favorito
 }
